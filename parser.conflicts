@@ -1,0 +1,13 @@
+// Parser Conflict Information for grammar file "parser.y - 25/05/2018 10:16:08 PM"
+
+Shift/Reduce conflict on symbol "'}'", parser will shift
+ Reduce 35:	BlockStatements -> /* empty */
+ Shift "'}'":	State-30 -> State-31
+  Items for From-state State 30
+    33 Block: '{' . '}' 
+    34 Block: '{' . BlockStatements '}' 
+  Items for Next-state State 31
+    33 Block: '{' '}' .
+	-lookahead: PUBLIC, STATIC, VOID, '}'
+
+// End conflict information for parser
